@@ -139,6 +139,10 @@ set hlsearch
 set clipboard=unnamedplus
 set hidden
 
+if executable('rg')
+    set grepprg=rg\ --vimgrep\ --no-heading
+endif
+
 " These should also check XDG_CACHE, but I will leave for now.
 set undofile
 set undodir=~/.cache/vim/undo
