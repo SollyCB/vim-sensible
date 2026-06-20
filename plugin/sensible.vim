@@ -68,9 +68,6 @@ if s:MaySet('wildmenu')
   set wildmenu
 endif
 
-if s:MaySet('scrolloff')
-  set scrolloff=1
-endif
 if s:MaySet('sidescroll') && s:MaySet('sidescrolloff')
   set sidescroll=1
   set sidescrolloff=2
@@ -81,7 +78,7 @@ if has('patch-7.4.2109')
 endif
 
 if s:MaySet('listchars')
-  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+  set listchars=tab:\ \ ,trail:-,extends:>,precedes:<,nbsp:+
 endif
 
 " Delete comment character when joining commented lines.
