@@ -133,6 +133,15 @@ endif
 if has('syntax') && !exists('g:syntax_on')
   syntax enable
 endif
+set background=dark
+set hlsearch
+
+set clipboard=unnamedplus
+
+" These should also check XDG_CACHE, but I will leave for now.
+set undofile
+set undodir=~/.cache/vim/undo
+set dir=~/.cache/vim/swap
 
 if empty(mapcheck('<C-U>', 'i'))
   inoremap <C-U> <C-G>u<C-U>
