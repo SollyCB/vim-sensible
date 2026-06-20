@@ -137,6 +137,7 @@ set background=dark
 set hlsearch
 
 set clipboard=unnamedplus
+set hidden
 
 " These should also check XDG_CACHE, but I will leave for now.
 set undofile
