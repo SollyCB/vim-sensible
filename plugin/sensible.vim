@@ -148,6 +148,10 @@ set undofile
 set undodir=~/.cache/vim/undo
 set dir=~/.cache/vim/swap
 
+nnoremap <c-s> :w<cr>
+nnoremap <tab> :tabn<cr>
+nnoremap <s-tab> :tabp<cr>
+
 if empty(mapcheck('<C-U>', 'i'))
   inoremap <C-U> <C-G>u<C-U>
 endif
