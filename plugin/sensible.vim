@@ -133,10 +133,8 @@ endif
 if has('syntax') && !exists('g:syntax_on')
   syntax enable
 endif
-set background=dark
-set hlsearch
 
-set clipboard=unnamedplus
+set hlsearch
 set hidden
 
 if executable('rg')
